@@ -1,0 +1,5 @@
+beans\Point.class
+beans\Position.class
+beans\Direction.class
+exceptions\TendeuseException.class
+util\MessagesConstantes.class
