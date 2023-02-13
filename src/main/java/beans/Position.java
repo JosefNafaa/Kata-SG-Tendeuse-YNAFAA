@@ -1,67 +1,54 @@
 package beans;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter @Setter
+@ToString
 public class Position {
-    private Point point;
+    private int x;
+    private int y;
     private Direction direction;
 
-    public Position() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-    public Position(Point point, Direction direction) {
-        super();
-        this.point = point;
+    public Position(int x, int y, Direction direction) {
+        this.x = x;
+        this.y = y;
         this.direction = direction;
     }
 
-    public Point getPoint() {
-        return point;
+
+    public boolean estPositionValide(PointLimite pLimite)
+    {
+        return x >=0 &&  y >= 0 && x <= pLimite.getX() &&  y <= pLimite.getY();
+    }
+    public void avancer(final PointLimite pLimit) {
+
+        switch(direction) {
+            case North :
+                if (y < pLimit.getY()) { y += 1; }
+                break;
+            case South :
+                if (y > 0) { y -= 1; }
+                break;
+            case East :
+                if (x < pLimit.getX()) { x += 1; }
+                break;
+            case West :
+                if (x > 0) { x -= 1; }
+                break;
+        }
+    }
+    public void tournerDroite() {
+        direction = direction.getRightDirection();
     }
 
-    public void setPoint(Point point) {
-        this.point = point;
+    public void tournerGauche() {
+        direction = direction.getLeftDirection();
     }
 
-    public Direction getDirection() {
-        return direction;
-    }
-
-    public void setDirection(Direction direction) {
-        this.direction = direction;
-    }
-
-    @Override
-    public String toString() {
-        return "Position [point=" + point + ", direction=" + direction + "]";
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + ((direction == null) ? 0 : direction.hashCode());
-        result = prime * result + ((point == null) ? 0 : point.hashCode());
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Position other = (Position) obj;
-        if (direction != other.direction)
-            return false;
-        if (point == null) {
-            if (other.point != null)
-                return false;
-        } else if (!point.equals(other.point))
-            return false;
-        return true;
+    public Position clone() {
+        return new Position(this.x, this.y, this.direction);
     }
 
 }

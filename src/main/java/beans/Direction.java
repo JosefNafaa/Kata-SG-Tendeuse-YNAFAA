@@ -1,30 +1,45 @@
 package beans;
 
 public enum Direction {
-    NORTH('N', 0, 1),
-    EAST('E', 1, 0),
-    WEST('W', -1, 0),
-    SOUTH('S', 0, -1);
+    North("N", "W", "E"),
+    South("S", "E", "W"),
+    West("W", "S", "N"),
+    East("E", "N", "S");
 
-    char codeORientation;
-    int coordonneX;
-    int coordonneY;
+    private final String code;
+    private final String gauche;
+    private final String droite;
 
-    Direction(char codeORientation, int coordonneX, int coordonneY) {
-        this.coordonneX = coordonneX;
-        this.coordonneY = coordonneY;
-        this.codeORientation = codeORientation;
+    private Direction(final String code,final String codeGauche,final String codeDroite) {
+        this.code = code;
+        this.gauche = codeGauche;
+        this.droite = codeDroite;
     }
 
-    public char getCodeORientation() {
-        return codeORientation;
+    public String getCode() {
+        return this.code;
     }
 
-    public int getCoordonneX() {
-        return coordonneX;
+    public Direction getLeftDirection() {
+        return getDirectionFromCode(gauche);
     }
 
-    public int getCoordonneY() {
-        return coordonneY;
+    public Direction getRightDirection() {
+        return getDirectionFromCode(droite);
+    }
+
+    public static Direction getDirectionFromCode(final String code) {
+        for (Direction direction : Direction.values()) {
+            if (direction.getCode().equals(code)) {
+                return direction;
+            }
+        }
+        return null;
+    }
+
+
+    @Override
+    public String toString() {
+        return this.code;
     }
 }

@@ -1,5 +1,9 @@
-beans\Point.class
+beans\Tendeuse$1.class
+beans\Position$1.class
+beans\Instruction.class
 beans\Position.class
-beans\Direction.class
 exceptions\TendeuseException.class
+beans\Tendeuse.class
+beans\PointLimite.class
+beans\Direction.class
 util\MessagesConstantes.class

@@ -1,5 +1,7 @@
 E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\util\MessagesConstantes.java
 E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\Position.java
 E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\Direction.java
-E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\Point.java
+E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\Instruction.java
 E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\exceptions\TendeuseException.java
+E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\PointLimite.java
+E:\Courses\Kata-Tendeuse-Sg-YNAFAA\src\main\java\beans\Tendeuse.java
