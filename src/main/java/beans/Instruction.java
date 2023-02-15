@@ -20,4 +20,12 @@ public enum Instruction {
     public String getMessageInstruction() {
         return messageInstruction;
     }
+    public static Instruction getCommandeFromCode(final char code) {
+        for (Instruction commande : Instruction.values()) {
+            if (commande.getLibelleInstruction()==code) {
+                return commande;
+            }
+        }
+        return null;
+    }
 }

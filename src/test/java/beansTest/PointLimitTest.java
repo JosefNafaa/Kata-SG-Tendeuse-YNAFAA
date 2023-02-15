@@ -12,7 +12,8 @@ public class PointLimitTest {
 
     @Test(expected = TendeuseException.class)
     public void should_throw_an_exception_when_x_is_negative() {
-            PointLimite p=new PointLimite(-1, 0);
+
+        PointLimite p=new PointLimite(-1, 0);
     }
 
     @Test(expected = TendeuseException.class)

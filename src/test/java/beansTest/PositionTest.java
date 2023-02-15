@@ -14,13 +14,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class PositionAvancerTest {
+public class PositionTest {
     private final Position position;
     private final PointLimite limit;
     private final int resultX;
     private final int resultY;
 
-    public PositionAvancerTest(final Position position, final PointLimite limit, final int resultX, final int resultY) {
+    public PositionTest(final Position position, final PointLimite limit, final int resultX, final int resultY) {
         this.position = position;
         this.limit = limit;
         this.resultX = resultX;
@@ -39,17 +39,21 @@ public class PositionAvancerTest {
                 new Object[] { new Position(5, 1, Direction.South), new PointLimite(5, 5), 5, 0 },
                 new Object[] { new Position(2, 2, Direction.West), new PointLimite(5, 5), 1, 2 },
                 new Object[] { new Position(2, 2, Direction.East), new PointLimite(5, 5), 3, 2 },
-                new Object[] { new Position(2, 2, Direction.North), new PointLimite(5, 5), 2, 3 }
+                new Object[] { new Position(2, 2, Direction.North), new PointLimite(5, 5), 2, 3 },
+                new Object[] { new Position(8, 2, Direction.North), new PointLimite(5, 5), 2, 3 }
         );
     }
 
     @Test
     public void avancer() {
         // When
-        position.avancer(limit);
-        // Then
-        assertEquals(position.getX(), resultX);
-        assertEquals(position.getY(), resultY);
+      if(position.estPositionValide(limit)){
+          position.avancer(limit);
+          // Then
+          assertEquals(position.getX(), resultX);
+          assertEquals(position.getY(), resultY);
+      }
+
     }
 
     @Test

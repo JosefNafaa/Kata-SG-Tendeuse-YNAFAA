@@ -12,7 +12,6 @@ public class Tendeuse {
 
     public Tendeuse(Position position, PointLimite limite, List<Instruction> cmds) {
         if (!position.estPositionValide(limite)) {
-            //logger.error(MessagesConstantes.ERREUR_POSITION_INITIALE);
             throw new TendeuseException(MessagesConstantes.ERREUR_POSITION_INITIALE);
         }
         this.position = position;
