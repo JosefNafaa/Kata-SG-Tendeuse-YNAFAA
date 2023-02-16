@@ -27,6 +27,6 @@ public class TendeuseMain {
         }
         logger.info("*************************************************");*/
 
-        System.out.println(fileLine.get(0));
+
     }
 }
