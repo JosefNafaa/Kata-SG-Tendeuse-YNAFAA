@@ -1,6 +1,5 @@
 package beansTest;
 
-import beans.Direction;
 import beans.PointLimite;
 import exceptions.TendeuseException;
 import org.junit.Test;
