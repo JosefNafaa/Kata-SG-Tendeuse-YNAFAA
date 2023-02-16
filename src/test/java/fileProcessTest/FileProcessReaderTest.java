@@ -58,7 +58,6 @@ public class FileProcessReaderTest {
 
         for (int i = 0 ; i < positions.size() ; i++) {
             assertNotNull(positions.get(i));
-            System.out.println(result.get(i));
             assertEquals(result.get(i), positions.get(i).toString());
         }
     }

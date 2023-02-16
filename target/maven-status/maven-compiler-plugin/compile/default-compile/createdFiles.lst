@@ -1,0 +1,16 @@
+main\TendeuseMain.class
+fileProcess\AbstractConertisseurLigne.class
+exceptions\TendeuseException.class
+fileProcess\LignePointLimite.class
+fileProcess\FileProcessReader.class
+util\MessagesConstantes.class
+beans\Tendeuse$1.class
+beans\Position$1.class
+beans\Instruction.class
+beans\Position.class
+fileProcess\FileReader.class
+beans\Tendeuse.class
+fileProcess\LigneInstruction.class
+fileProcess\LignePosition.class
+beans\PointLimite.class
+beans\Direction.class

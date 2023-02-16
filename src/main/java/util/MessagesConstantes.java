@@ -12,4 +12,8 @@ public class MessagesConstantes {
     public static final String ERREUR_FICHIER_INCOMPLET = "Le fichier est incomplet";
 
     public static  final String ERREUR_FICHIER_FORMAT= "Le format du fichier est invalide";
+
+    public static  final String ERREUR_FICHIER_NOM= "Il faut donner le nom du fichier";
+
+
 }

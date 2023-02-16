@@ -1,0 +1,10 @@
+beansTest\PositionDirectionTest.class
+beansTest\PositionTest.class
+fileProcessTest\FileProcessReaderTest.class
+fileProcessTest\LignePositionTest.class
+beansTest\TendeuseTest.class
+fileProcessTest\LigneInstructionTest.class
+fileProcessTest\LignePointLimiteTest.class
+beansTest\PointLimitTest.class
+beansTest\DirectionTest.class
+beansTest\InstructionTest.class
