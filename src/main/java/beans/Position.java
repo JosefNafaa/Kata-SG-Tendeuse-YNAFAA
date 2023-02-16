@@ -5,7 +5,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Getter @Setter
-@ToString
+
 public class Position {
     private int x;
     private int y;
@@ -51,4 +51,11 @@ public class Position {
         return new Position(this.x, this.y, this.direction);
     }
 
+    @Override
+    public String toString() {
+        return
+                "" + x +
+                " " + y +
+                " " + direction;
+    }
 }

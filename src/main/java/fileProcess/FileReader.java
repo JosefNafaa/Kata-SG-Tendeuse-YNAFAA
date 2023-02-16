@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class FileReader {
 
 
-
     private static FileReader instance;
 
     private FileReader() {};
