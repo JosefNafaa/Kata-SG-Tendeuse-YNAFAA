@@ -1,28 +1,30 @@
 package beans;
 
 public enum Instruction {
-    GAUCHE('G', "Tourner à gauche"),
-    DROITE('D', "tourner à droite"),
-    AVANCER('A', "avancer");
 
-    private char libelleInstruction;
-    private String messageInstruction;
+    AVANCER("A" ,"Avancer"),
+    DROITE("D","Tourner à droite"),
+    GAUCHE("G","Tourner à gauche");
 
-     Instruction(char libelleInstruction, String messageInstruction) {
-        this.libelleInstruction = libelleInstruction;
-        this.messageInstruction = messageInstruction;
+    private String code;
+
+    private String libelleInstruction;
+    private Instruction(String code,String libelleInstruction) {
+        this.code = code;
+        this.libelleInstruction=libelleInstruction;
     }
 
-    public char getLibelleInstruction() {
+    public String getCode() {
+        return code;
+    }
+
+    public String getLibelleInstruction() {
         return libelleInstruction;
     }
 
-    public String getMessageInstruction() {
-        return messageInstruction;
-    }
-    public static Instruction getCommandeFromCode(final char code) {
+    public static Instruction getCommandeFromCode(final String code) {
         for (Instruction commande : Instruction.values()) {
-            if (commande.getLibelleInstruction()==code) {
+            if (commande.getCode().equals(code)) {
                 return commande;
             }
         }
