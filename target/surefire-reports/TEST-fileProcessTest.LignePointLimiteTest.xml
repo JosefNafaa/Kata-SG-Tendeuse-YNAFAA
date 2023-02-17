@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="fileProcessTest.LignePointLimiteTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="fileProcessTest.LignePointLimiteTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+10-LTS"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.6"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -62,7 +62,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[0]" time="0"/>
-  <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[1]" time="0.001"/>
+  <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[1]" time="0"/>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[2]" time="0"/>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[3]" time="0"/>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[4]" time="0"/>
@@ -70,5 +70,5 @@
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[6]" time="0"/>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[7]" time="0"/>
   <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[8]" time="0"/>
-  <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[9]" time="0.001"/>
+  <testcase classname="fileProcessTest.LignePointLimiteTest" name="convert[9]" time="0"/>
 </testsuite>

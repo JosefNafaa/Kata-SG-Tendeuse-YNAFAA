@@ -43,7 +43,7 @@
     <property name="java.class.path" value="C:\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.6"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -61,16 +61,16 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="fileProcessTest.LignePositionTest" name="convert[0]" time="0"/>
+  <testcase classname="fileProcessTest.LignePositionTest" name="convert[0]" time="0.001"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[1]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[2]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[3]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[4]" time="0"/>
-  <testcase classname="fileProcessTest.LignePositionTest" name="convert[5]" time="0.001"/>
+  <testcase classname="fileProcessTest.LignePositionTest" name="convert[5]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[6]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[7]" time="0"/>
-  <testcase classname="fileProcessTest.LignePositionTest" name="convert[8]" time="0"/>
+  <testcase classname="fileProcessTest.LignePositionTest" name="convert[8]" time="0.001"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[9]" time="0"/>
-  <testcase classname="fileProcessTest.LignePositionTest" name="convert[10]" time="0.001"/>
+  <testcase classname="fileProcessTest.LignePositionTest" name="convert[10]" time="0"/>
   <testcase classname="fileProcessTest.LignePositionTest" name="convert[11]" time="0"/>
 </testsuite>
